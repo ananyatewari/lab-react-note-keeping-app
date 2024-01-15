@@ -29,6 +29,7 @@ export default class EditorClass extends Component {
                 {/* <!-- call the handleChanges method in the onChange event and set the default value as empty--> */}
                 <img src={Refresh} id='refresh' onClick={() => {
                     this.setState({value: ''})
+                    document.querySelector('.input-text').value = ""
                     }}/>
                 <textarea className="input-text" onChange={this.handleChange} defaultValue={this.state.value}/>
             </div>
