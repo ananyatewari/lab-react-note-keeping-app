@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "./Editor.css"
+import Refresh from "../assets/download.png"
 
 export default class EditorClass extends Component {
     constructor(props) {
@@ -26,6 +27,9 @@ export default class EditorClass extends Component {
             <div className="input">
                 <h3>Input</h3>
                 {/* <!-- call the handleChanges method in the onChange event and set the default value as empty--> */}
+                <img src={Refresh} id='refresh' onClick={() => {
+                    this.setState({value: ''})
+                    }}/>
                 <textarea className="input-text" onChange={this.handleChange} defaultValue={this.state.value}/>
             </div>
             <div className="output">

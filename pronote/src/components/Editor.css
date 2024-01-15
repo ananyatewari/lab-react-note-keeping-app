@@ -49,3 +49,11 @@ h3 {
     font-size: 25px;
     padding-bottom: 10px;
 }
+
+#refresh {
+    position: absolute;
+    height: 80px;
+    left: 43vw;
+    top: 78vh;
+    cursor: pointer;
+}
